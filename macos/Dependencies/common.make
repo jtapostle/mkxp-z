@@ -92,7 +92,7 @@ $(DOWNLOADS)/vorbis/configure: $(DOWNLOADS)/vorbis/autogen.sh
 	./autogen.sh
 
 $(DOWNLOADS)/vorbis/autogen.sh:
-	$(CLONE) $(GITHUB)/sezero/vorbis $(DOWNLOADS)/vorbis
+	$(CLONE) --single-branch --branch darwin0 $(GITHUB)/sezero/vorbis $(DOWNLOADS)/vorbis
 
 
 # Ogg, dependency of Vorbis
